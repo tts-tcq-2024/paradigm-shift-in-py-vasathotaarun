@@ -1,6 +1,5 @@
-
 def battery_is_ok(temperature, soc, charge_rate):
- return(tempcheck(temperature) and soccheck(soc) and charge_ratecheck(charge_rate))
+return(tempcheck(temperature) and soccheck(soc) and charge_ratecheck(charge_rate))
  
 def tempcheck(temperature):
   if temperature < 0 or temperature > 45:
@@ -20,8 +19,6 @@ def charge_rate_check(charge_rate):
     return False
   else:
     return True
-
-
 if __name__ == '__main__':
   assert(battery_is_ok(25, 70, 0.7) is True)
   assert(battery_is_ok(50, 85, 0) is False)
