@@ -1,5 +1,5 @@
 import unittest
-from battery_monitor import BatteryMonitor
+from check_limits import BatteryMonitor
 from utils import is_within_range, is_approaching_limit, calculate_tolerance
  
 class TestUtils(unittest.TestCase):
