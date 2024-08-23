@@ -72,7 +72,7 @@ class BatteryMonitor:
     def output_message(self, message):
         # Output the message, this can be modified to log, print, or send elsewhere
         print(message)
- 
+
 if __name__ == '__main__':
     monitor = BatteryMonitor()
     # Example values
